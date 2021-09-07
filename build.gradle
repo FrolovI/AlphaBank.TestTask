@@ -2,6 +2,7 @@ plugins {
     id 'org.springframework.boot' version '2.5.0'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
+    id "io.freefair.lombok" version "6.1.0"
 }
 
 group 'ru.alphabank.example'
@@ -11,7 +12,7 @@ repositories {
     mavenCentral()
 }
 ext {
-    set('springCloudVersion', 'Hoxton.SR5')
+    set('springCloudVersion', '2020.0.2')
 }
 
 dependencyManagement {
@@ -23,7 +24,8 @@ dependencyManagement {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
-    implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+    implementation "org.springframework.cloud:spring-cloud-starter-openfeign"
+    implementation "org.springframework.cloud:spring-cloud-starter-bootstrap"
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
