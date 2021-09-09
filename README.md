@@ -1,5 +1,6 @@
 # AlphaBank.TestTask
 Test task from the Alfa-Bank company
+
 Russian instruction:
 1) Для сборки приложения использовать команду .\gradlew build;
 2) Для сборки и запуска контейнера нужно иметь установленный и запущенный докер на компьютере;
